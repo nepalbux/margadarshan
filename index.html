@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaste Saving | खास्टे बचत तथा ऋण सहकारी संस्था लि.</title>
+    <link rel="icon" href="https://media-hosting.imagekit.io/daf219f210ac4321/Screen%20Shot%202025-05-14%20at%2020.46.48%20-%20Edited.png?Expires=1841844833&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=JvEnB5e0e-obbZOzgSMEGNl~vOj0XMflpWxy4ZeNV--Zhqm2CogZqcRov~HOJdX12l0MX8HUVzX~Ea9HvZmhX8ztM9lF-s092rTpxdMLjSbsv8L2vWNlDRoz7Vg3ZONp1MkG~ftlxkFQJVP85RA8H39ZUEJ78-P2U0~ClaP7mDbeZbOTnPWrIiX5HdCj-1oae6AR8XAdJ6RlaQZTetJQ~ULmDWfoftoQP7-3nFrWbAnG3PoraaxVJYIB1QKGoAjK4kGenmkoAPtan1xThXYO-IHCR~lWSHx~zCaSEgzvITaYaFVSJJ9CWh0Cfzwsa8cZVAhnMIUi61LAY8rG7RnG0w__" type="image/x-icon">
+    <meta name="description" content="Trusted web development services in Pokhara offering  website and mobile app development services. Call us anytime!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066cc',
+                        secondary: '#003366',
+                        accent: '#ff6600',
+                        light: '#f8f9fa',
+                        dark: '#212529',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom CSS */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding-top: 80px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff6600;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Animation for hero text */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        /* Mobile menu animation */
+        .mobile-menu {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        
+        /* Tap target sizing for mobile */
+        .tap-target {
+            min-height: 48px;
+            min-width: 48px;
+        }
+        
+        /* Prevent zoom on input focus */
+        @media screen and (max-width: 767px) {
+            input, select, textarea {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-light">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="mr-3 text-primary text-3xl">
+                    <a href="#" class="flex items-center gap-2 text-2xl font-['architectural'] text-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                     <img src="https://media-hosting.imagekit.io/daf219f210ac4321/Screen%20Shot%202025-05-14%20at%2020.46.48%20-%20Edited.png?Expires=1841844833&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=JvEnB5e0e-obbZOzgSMEGNl~vOj0XMflpWxy4ZeNV--Zhqm2CogZqcRov~HOJdX12l0MX8HUVzX~Ea9HvZmhX8ztM9lF-s092rTpxdMLjSbsv8L2vWNlDRoz7Vg3ZONp1MkG~ftlxkFQJVP85RA8H39ZUEJ78-P2U0~ClaP7mDbeZbOTnPWrIiX5HdCj-1oae6AR8XAdJ6RlaQZTetJQ~ULmDWfoftoQP7-3nFrWbAnG3PoraaxVJYIB1QKGoAjK4kGenmkoAPtan1xThXYO-IHCR~lWSHx~zCaSEgzvITaYaFVSJJ9CWh0Cfzwsa8cZVAhnMIUi61LAY8rG7RnG0w__" alt="Logo" class="w-8 h-8">
+                </div>
+                <a href="#" class="text-2xl md:text-3xl font-bold text-green-700">
+                    <span class="text-accent-700">खास्टे </span>बचत तथा ऋण सहकारी
+                </a>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="nav-link text-dark hover:text-green-700 transition">गृहपृष्ठ</a>
+                <a href="#services" class="nav-link text-dark hover:text-green-700 transition">सेवाहरू</a>
+                <a href="#about" class="nav-link text-dark hover:text-green-700 transition">हाम्रो बारेमा</a>
+                <a href="#testimonials" class="nav-link text-dark hover:text-green-700 transition">कार्यकारी समिति</a>
+                <a href="#contact" class="nav-link text-dark hover:text-green-700 transition">सम्पर्क</a>
+                <a href="tel:+9779856020179" class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-accent transition flex items-center tap-target">
+                    <i class="fas fa-mobile mr-2"></i> Mobile Banking Login
+                </a>
+            </div>
+            
+            <button id="menu-toggle" class="md:hidden text-2xl text-dark tap-target" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-lg absolute w-full z-50">
+            <div class="container mx-auto px-4 py-3 flex flex-col">
+                <a href="#" class="py-3 text-dark hover:text-accent border-b border-gray-100 tap-target">Home</a>
+                <a href="#services" class="py-3 text-dark hover:text-accent border-b border-gray-100 tap-target">Services</a>
+                <a href="#about" class="py-3 text-dark hover:text-accent border-b border-gray-100 tap-target">About</a>
+                <a href="#testimonials" class="py-3 text-dark hover:text-accent border-b border-gray-100 tap-target">Testimonials</a>
+                <a href="#contact" class="py-3 text-dark hover:text-accent border-b border-gray-100 tap-target">Contact</a>
+                <a href="tel:+9779856020179" class="bg-accent text-white px-4 py-3 rounded-lg hover:bg-orange-700 transition my-2 text-center tap-target">
+                    <i class="fas fa-phone mr-2"></i> कल गर्नुहोस्
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero-section">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://ik.imagekit.io/70al5xvi0/Generated%20File%20May%2018,%202025%20-%201_24PM.mp4?updatedAt=1747554074580" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content flex items-center justify-center h-full text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-3xl md:text-3xl lg:text-3xl font-bold mb-6 animate-fade-in">
+                    <span class="text-accent"> हाम्रो विश्वास</span>  सुरक्षित भविष्य, सजिलो बैंकिङ्ग। हामीसँग छ भरोसा, प्रगतिको साथ र <span class="text-accent"> समृद्धिको बाटो।</span>
+                </h1>
+                <p class="text-lg md:text-xl text-grey-800 lg:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.3s;">
+                    "आधुनिक, सुरक्षित र प्रयोगमैत्री बैंकिङ्ग सेवा, जसले तपाईंको वित्तीय लक्ष्यलाई बढाउँछ र तपाईंलाई आर्थिक सफलतासँग जोड्दछ।"
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 animate-fade-in" style="animation-delay: 0.6s;">
+                    <a href="#contact" class="bg-accent hover:bg-orange-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition flex items-center justify-center tap-target">
+                        <i class="fas fa-envelope mr-2"></i> सम्पर्क
+                    </a>
+                    <a href="tel:+9779856020179" class="bg-green-700 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition flex items-center justify-center tap-target">
+                        <i class="fas fa-phone mr-2"></i> कल गर्नुहोस्
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-green-800">हाम्रा वित्तीय सेवाहरू</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-purple-600 max-w-3xl mx-auto">
+                    हामी सहकारी नियमावलीको आधारमा हाम्रा सहकारी सदस्यहरूलाई समग्र वित्तीय सेवाहरू प्रदान गर्दछौं।
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <a href="Register-Domain.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-orange-400">
+                        <i class="fas fa-domain"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">खुला तथा ऐच्छिक  सदस्यता</h3>
+                        <p class="text-dark mb-4">
+                            abcd......
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस्<i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Service 2 -->
+                <a href="develop-website.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-orange-500">
+                        <i class="fas fa-website"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">सदस्यहरुद्वारा प्रजातान्त्रिक नियन्त्रण</h3>
+                        <p class="text-dark mb-4">
+                            abcd.....
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस्<i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Service 3 -->
+                <a href="Mobile-App.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-red-600">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">सदस्यहरुको आर्थिक सहभागिता</h3>
+                        <p class="text-dark mb-4">
+                            abcd......
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस् <i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Service 4 -->
+                <a href="Hosting-services.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-green-300">
+                        <i class="fas fa-hosting"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">स्वायत्तता तथा स्वतन्त्रता</h3>
+                        <p class="text-dark mb-4">
+                           abcd.......
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस् <i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Service 5 -->
+                <a href="Social-Page-Manage.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-green-400">
+                        <i class="fas fa-social media"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">शिक्षा, तालिम र सूचना</h3>
+                        <p class="text-dark mb-4">
+                            abcd......
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस्<i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Service 6 -->
+                <a href="Develop-Software.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-green-600">
+                        <i class="fas fa-software"></i>
+                    </div>
+                    
+                     <a href="Social-Page-Manage.html" class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300 block">
+                    <div class="h-48 bg-primary flex items-center justify-center text-6xl text-green-400">
+                        <i class="fas fa-social media"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">समुदायप्रति चासो</h3>
+                        <p class="text-dark mb-4">
+                            abcd......
+                        </p>
+                        <span class="text-accent font-semibold hover:underline transition">
+                            कल गर्नुहोस्<i class="fas fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </a>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-accent hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition inline-flex items-center tap-target">
+                    <i class="fas fa-envelope mr-2"></i> हाम्रा सेवासम्बन्धी कुनै गुनासो वा सुझाव भएमा कृपया हामीलाई सम्पर्क गर्नुहोस्।
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Auto mechanic at work" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-xl font-bold">सहकारी क्षेत्रमा १५ वर्षभन्दा बढी अनुभव</h3>
+                                <p>"सन् २०१२ देखि आधुनिक र भरपर्दो बैंकिङ सेवा प्रदान गर्दै आइरहेका छौं।"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-secondary">हाम्रो बारेमा</h2>
+                    <p class="text-lg text-dark mb-6">
+                        हामी एक अग्रणी वित्तीय संस्था हौं, जसले सुरक्षित, भरपर्दो र गुणस्तरीय वित्तीय सेवा प्रदान गर्ने लक्ष्यका साथ आफ्नो सेवा विस्तार गरिरहेको छ। हाम्रो उद्देश्य ग्राहकको आर्थिक समृद्धिमा सहकार्य गर्दै उनीहरूको आवश्यकता अनुसार अनुकूल सेवा उपलब्ध गराउनु हो।
+
+                        स्थापना कालदेखि नै हामीले पारदर्शिता, उत्तरदायित्व र नवप्रवर्तनलाई हाम्रो मुख्य मूल्य मान्दै आएका छौं। व्यक्तिगत तथा व्यवसायिक ग्राहकहरूलाई लक्षित गरी हामी ऋण, बचत, लगानी, बीमा, कर परामर्श, वित्तीय योजना तथा डिजिटल बैंकिङ सेवाहरू प्रदान गर्दै आएका छौं।
+
+                        हामी आधुनिक प्रविधिको प्रयोगमार्फत सेवाहरूलाई छरितो, सहज र सुरक्षित बनाउँदै आएका छौं। वित्तीय साक्षरताको प्रवर्द्धन र दीगो आर्थिक विकासतर्फ योगदान पुर्‍याउनु हाम्रो दीर्घकालीन उद्देश्य हो।
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="text-accent mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-secondary">प्रमाणित र अनुभवी</h4>
+                                <p class="text-dark">हाम्रो टोली प्रमाणित र अनुभवी विशेषज्ञहरूद्वारा सञ्चालित छ।</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-accent mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-secondary">२४/७ पारदर्शी प्रत्यक्ष सहयोग सेवा</h4>
+                                <p class="text-dark">२४ घण्टा ७ दिन पारदर्शी प्रत्यक्ष सहयोग सेवा उपलब्ध छ।
+
+</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-accent mr-4 mt-1">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-secondary">एक कलमै सेवा उपलब्ध</h4>
+                                <p class="text-dark">एक पटकको कलमै तपाईँको सेवा हाम्रो पहुँचमा।</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition inline-flex items-center tap-target">
+                        <i class="fas fa-phone-alt mr-2"></i> आजै हामीलाई सम्पर्क गर्नुहोस्।
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl text-green-400 md:text-4xl font-bold mb-4">खास्टे बचत तथा ऋण सहकारी नै किन?</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg max-w-3xl mx-auto">
+                    किनकि हामी भरपर्दो, पारदर्शी, प्रमाणित र अनुभवी टोलीसहित, एक कलमै सेवा दिने तपाईंलाई प्राथमिकता दिने संस्था हौं।
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Workmanship</h3>
+                    <p>
+                        We take pride in our work and stand behind every job we complete with our satisfaction guarantee.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fair Pricing</h3>
+                    <p>
+                        Competitive rates with no hidden fees. We provide upfront pricing before starting any work.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Always On Time</h3>
+                    <p>
+                        We value your time. Our technicians experts arrive promptly at the scheduled time, to finalize your projects.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p>
+                        Our friendly customer service team is available around the clock to answer your questions.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modern Technology</h3>
+                    <p>
+                        We use state-of-the-art technology to diagnose and solve development issues efficiently.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">5-Star Service</h3>
+                    <p>
+                        Our many satisfied customers consistently rate us 5 stars for our professionalism and expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-secondary">हाम्रा सदस्यहरूको प्रतिक्रिया</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-dark max-w-3xl mx-auto">
+                    हाम्रो मात्र शब्दमा नबस्नुहोस् — नेपालभरिका हाम्रा सन्तुष्ट ग्राहकहरूका अनुभवहरू सुन्नुहोस्।
+
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-dark italic mb-6">
+                        "म अत्यन्त उत्साहित छु कि मैले एक फोन कलबाटै खाता खोल्न सकेँ। उनीहरूले मेरो व्यक्तिगत विवरण मेरो कार्यालय जाँदा भेरिफाई गरे। सेवा साँच्चिकै अविस्मरणीय रह्यो।"
+
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ramraja Bastakoti" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary">रामराज बस्ताकोटी</h4>
+                            <p class="text-sm text-gray-600">पोखरा-२६</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-dark italic mb-6">
+"खास्टे बचत साँच्चै राम्रो रहेछ जस्तो मैले सुनेको थिएँ। म मेरो कृषि खेतीका लागि ऋण खोज्दै थिएँ। मैले अनलाइनबाट ऋणका लागि आवेदन दिएँ र अर्को दिन कार्यालय पनि गएँ। उनीहरूले समयमै मेरो ऋण स्वीकृत गरे र हाल म ईएमआई भुक्तानी गर्दैछु।"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Bishnu Yadav" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary">अनिल अधिकारी</h4>
+                            <p class="text-sm text-gray-600">पोखरा-२७</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-dark italic mb-6">
+"Aमैले मेरो बैंक खातामा ५ लाख रकम जम्मा गरेको थिएँ, तर एक वर्षे निक्षेपको ब्याजदर करीब ५% मात्रै थियो जुन मलाई कम लाग्यो। मैले यो संस्थाबारे सुनेँ र कार्यालय गएँ। कर्मचारीहरू निकै राम्रो थिए र मलाई एक वर्षे निश्चित निक्षेपमा ८% ब्याजदर प्रस्ताव गरे साथै प्रत्येक ३ महिनामा ब्याज भुक्तानी हुने व्यवस्था पनि। अहिले म समयमै मेरो ब्याज प्राप्त गर्दैछु र निकै खुशी छु।
+"
+
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Mahesh Shrestha" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-secondary">सुनिता तिमिल्सिना</h4>
+                            <p class="text-sm text-gray-600">पोखरा-२८
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://www.google.com/search?q=PTC+Nepal+reviews" target="_blank" rel="noopener noreferrer" class="text-green-600 font-semibold hover:underline transition inline-flex items-center tap-target">
+                    Read more reviews on Google <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="bg-accent text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="text-3xl mr-4">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">तत्काल सेवा चाहनुहुन्छ??</h3>
+                        <p>हामी आपत्कालीन कलका लागि २४/७ उपलब्ध छौं।</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="tel:+9779856020179" class="bg-white hover:bg-gray-100 text-green-500 px-6 py-3 rounded-lg text-lg font-semibold transition flex items-center tap-target">
+                        <i class="fas fa-phone mr-2"></i> फोन गर्नुहोस्: ९८५६०२०१७९
+
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-secondary">हामीलाई सम्पर्क गर्नुहोस्</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-lg text-dark max-w-3xl mx-auto">
+                    प्रश्न छन् वा सेवा चाहिएको छ? तलको फारम भर्नुहोस् वा हामीलाई फोन गर्नुहोस्। हामी चाँडै जवाफ दिनेछौं।
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-dark font-medium mb-2">तपाईंको नाम*</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-dark font-medium mb-2">इमेल*</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-dark font-medium mb-2">फोन नम्बर / सम्पर्क नम्बर*</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-dark font-medium mb-2">कुन सेवा चाहिएको हो?</label>
+                            <select id="service" name="service" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">सेवा छान्नुहोस्...</option>
+                                <option value="emergency">सदस्य बन्नुहोस्</option>
+                                <option value="drain">बचत खाता खोल्नुहोस्</option>
+                                <option value="water-heater">मुद्दति खाता खोल्नुहोस्</option>
+                                <option value="toilet">ऋण/ सापटी</option>
+                                <option value="pipe">गुनासो वा सुझाव</option>
+                                <option value="bathroom">खाताबारे सोधपुछ</option>
+                                <option value="other">अन्य कुनै गुनासो वा समस्या</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-dark font-medium mb-2">सन्देश*</label>
+                            <textarea id="message" name="message" rows="4" required 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-semibold transition tap-target">
+                            सन्देश पठाउनुहोस्
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="h-full flex flex-col justify-between">
+                        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                            <h3 class="text-xl font-bold mb-4 text-accent">हाम्रो सम्पर्क जानकारी</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="text-primary text-xl mr-4">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">कार्यालय ठेगाना</h4>
+                                        <p class="text-gray-600">पोखरा-२६, खरानीफाट, कास्की, नेपाल</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-primary text-xl mr-4">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">फोन</h4>
+                                        <p class="text-gray-600">+९७७ ९८५६०२०१७९ (२४/७ आपतकालीन सेवा)</p>
+                                        <p class="text-gray-600">+९७७ ९८५६०२०१७९ (२४/७ आपतकालीन सेवा)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-primary text-xl mr-4">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">इमेल ठेगाना </h4>
+                                        <p class="text-gray-600">info@khastesaving.com.np</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-primary text-xl mr-4">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-dark">कार्य समय</h4>
+                                        <p class="text-gray-600">कार्यालय: सोमबार-शुक्रबार, बिहान ७ बजे–साँझ ७ बजे</p>
+                                        <p class="text-gray-600">आपतकालीन सेवा: २४/७</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-4 text-secondary">सेवा क्षेत्र</h3>
+                            <p class="mb-4 text-dark">हामी पोखरा र वरिपरि क्षेत्रहरूमा गर्वका साथ सेवा दिन्छौं, जसमा समावेश छन्:</p>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <ul class="space-y-2 text-gray-600">
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> पोखरा</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> बागलुङ</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> वालिङ</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> गोर्खा</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="space-y-2 text-accent-600">
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> चितवन</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> बुटवल</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> बिर्गञ्ज</li>
+                                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i> गोर्खा
+
+</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <p class="mt-4 text-accent">तपाईंको विशेष आवश्यकताका लागि सेवा बारे जानकारी लिन कृपया फोन गर्नुहोस्।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">खास्टे बचत तथा ऋण सहकारी संस्था लि.</h3>
+                    <p class="mb-4">
+                        "आधुनिक, सुरक्षित र प्रयोगमैत्री बैंकिङ्ग सेवा, जसले तपाईंको वित्तीय लक्ष्यलाई बढाउँछ र तपाईंलाई आर्थिक सफलतासँग जोड्दछ।"
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent transition tap-target">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent transition tap-target">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent transition tap-target">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent transition tap-target">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">द्रुत लिंकहरू</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-accent transition tap-target">गृहपृष्ठ</a></li>
+                        <li><a href="#services" class="hover:text-accent transition tap-target">सेवाहरू</a></li>
+                        <li><a href="#about" class="hover:text-accent transition tap-target">हाम्रो बारेमा</a></li>
+                        <li><a href="#testimonials" class="hover:text-accent transition tap-target">कार्यकारी समिति</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition tap-target">सम्पर्क</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">सेवाहरू</h3>
+                    <ul class="space-y-2">
+                        <li><a href="domain-registration.html" class="hover:text-accent transition tap-target">सदस्य बन्नुहोस्</a></li>
+                        <li><a href="website-development.html" class="hover:text-accent transition tap-target">बचत खाता खोल्नुहोस्</a></li>
+                        <li><a href="mobile-app-development.html" class="hover:text-accent transition tap-target">मुद्दति खाता खोल्नुहोस्</a></li>
+                        <li><a href="server-management.html" class="hover:text-accent transition tap-target">गुनासो वा सुझाव</a></li>
+                        <li><a href="social-media-management" class="hover:text-accent transition tap-target">अन्य कुनै गुनासो वा समस्या</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Cसम्पर्क जानकारी</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">पोखरा-२६, खरानीफाट, कास्की, नेपाल</p>
+                        <p class="mb-2">अर्घौन चोकबाट १५०० मिटर दूरीमा</p>
+                        <p class="mb-4">
+                            <a href="tel:+9779856020179" class="hover:text-accent transition tap-target">+९७७ ९८५६०२०१७९</a>
+                        </p>
+                        <p>
+                            <a href="mailto:info@ptcnepal.com.np" class="hover:text-accent transition tap-target">info@khastesaving.com.np</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; <span id="currentYear"></span> खास्टे  बचत तथा ऋण सहकारी संस्था लि. सर्वाधिकार सुरक्षित।</p>
+                <div class="mt-4 text-sm">
+                    <a href="privacy-policy.html" class="hover:text-accent transition mr-4 tap-target">गोपनीयता</a>
+                    <a href="terms-of-service.html" class="hover:text-accent transition mr-4 tap-target">सेवा सर्तहरू</a>
+                    <a href="sitemap.html" class="hover:text-accent transition tap-target">साइटम्याप</a>
+                </div>
+                        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-300">Developed by <a href="https://ptcnepal.com.np" class="text-primary hover:underline">PTC Nepal</a></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div id="floating-cta" class="fixed bottom-6 right-6 z-50">
+        <a href="tel:+9779856020179" class="bg-green-600 hover:bg-accent-500 text-white rounded-full p-4 shadow-lg transition flex items-center justify-center animate-bounce tap-target" aria-label="Call Now">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            // Change icon based on menu state
+            const icon = menuToggle.querySelector('i');
+            if (mobileMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+            });
+        });
+        
+        // Smooth scrolling for anchor links with offset for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here you would typically send the form data to your server
+                // For demonstration, we'll just show an alert
+                alert('Thank you for your message! We will contact you shortly.');
+                this.reset();
+            });
+        }
+        
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Animate floating CTA
+        const floatingCta = document.getElementById('floating-cta');
+        if (floatingCta) {
+            let isPulsing = false;
+            
+            function pulse() {
+                if (!isPulsing) {
+                    isPulsing = true;
+                    floatingCta.classList.add('animate-pulse');
+                    setTimeout(() => {
+                        floatingCta.classList.remove('animate-pulse');
+                        isPulsing = false;
+                    }, 2000);
+                }
+            }
+            
+            // Pulse every 15 seconds
+            setInterval(pulse, 15000);
+            pulse(); // Initial pulse
+        }
+        
+        // Prevent zoom on input focus on mobile devices
+        document.addEventListener('DOMContentLoaded', function() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            }
+        });
+    </script>
+</body>
+</html>
